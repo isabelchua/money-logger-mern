@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #161616;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	font-family: 'Baloo Tamma 2', cursive;
+	color: #fff;
+}
+
+.container {
+	margin: 15px auto;
+	width: 100%;
+}
+
+h1 {
+	color: #8a8a8a;
+	margin: 30px 0 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #10a71d;
+	font-size: 2.5em;
+	line-height: 90%;
+	letter-spacing: 1px;
+	margin: 0 0 20px;
+}
+
+h3 {
+	border-bottom: 1px solid #bbb;
+	padding-bottom: 10px;
+	margin: 20px 0 10px;
+}
+
+h4 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+li {
+	border-radius: 30px;
+}
+
+.inc-exp-container {
+	background-color: rgb(29, 29, 29);
+	padding: 20px 20px 10px;
+	margin: 0px 0 0px;
+	border-radius: 20px;
+}
+
+.inc-exp-container > div {
+	/* flex: 1;  */
+	display: block;
+	text-align: left;
+}
+
+.money {
+	line-height: 50%;
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin: 5px 0 20px;
+}
+
+p {
+	margin: 0;
+}
+
+.money.plus {
+	color: #5dd890;
+}
+
+.money.minus {
+	color: #ee4835;
+}
+
+input[type='text'],
+input[type='number'] {
+	border: 1px solid #dedede;
+	border-radius: 20px;
+	display: block;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+}
+
+.list {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 0px;
+}
+
+.list li {
+	color: rgb(250, 250, 250);
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding: 10px 45px 7px 20px;
+	margin: 10px 0;
+}
+
+.list li.plus {
+	background-color: #1f9751;
+}
+
+.list li.minus {
+	background-color: #b9212e;
+}
+
+.delete-btn {
+	cursor: pointer;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	display: block;
+	top: 20%;
+	right: 13px;
+	opacity: 1;
+}
+
+.delete-btn:hover {
+	opacity: 0.6;
+}
+
+label {
+	display: inline-block;
+	margin: 20px 0px 0 0;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	opacity: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+	margin: 0;
+}
+
+.btn {
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	margin: 25px 5px 25px;
+	padding: 10px 3px 10px;
+	border: 2px solid #272727;
+	width: 155px;
+	border-radius: 30px;
+}
+
+.inc {
+	background-color: #1f9751;
+	float: left;
+}
+
+.exp {
+	background-color: #d61717;
+	float: right;
+}
+
+@media (min-width: 800px) {
+	.container {
+		width: 500px;
+	}
+	.btn {
+		width: 230px;
+	}
+}
